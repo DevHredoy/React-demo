@@ -1,10 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import Card from "./components/Card.js";
+import App from './App.js';
 
 ReactDOM.render(
-  <div>
-    <h1 className="headingStyle">Todo App</h1>
-    <Card/>
-  </div>,
-  document.getElementById("root")
+  <App/>,
+document.getElementById("root")
 );
