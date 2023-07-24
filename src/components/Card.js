@@ -9,10 +9,13 @@ const currentYear = date.getFullYear();
 //a component is created underneath so that
 //we dont have to write boiler plate code
 function Card(props) {
+  //through desctructuring we can do this
+  const { titleText, descText } = props;
   return (
     <div className="card">
-      <h3 className="cardTitle">{props.titleText}</h3>
-      <p className="cardDesc">{props.descText}</p>
+      <h3 className="cardTitle">{titleText}</h3>
+      <p className="cardDesc">{descText}</p>
+
       <p className="cardFooter">
         {dateName + "/" + monthName + "/" + currentYear}
       </p>
