@@ -10,8 +10,10 @@ function App() {
   return (
     <div>
       <h1 className="headingStyle">Todo App</h1>
-      {Data.map((item) => (
-        <Card titleText={item.title} desc={item.desc} />
+      // indexes will show that which index each of the element holds //map
+      function can take this second parameter
+      {Data.map((item, index) => (
+        <Card key={index} titleText={item.title} desc={item.desc} />
       ))}
     </div>
   );
