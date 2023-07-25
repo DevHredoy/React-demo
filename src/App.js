@@ -8,9 +8,7 @@ function App() {
   // cards have been created dynamically through for loop
 
   let items = [];
-  for (let x = 0; x < Data.length; x++) {
-    items.push(<Card titleText={Data[x].title} desc={Data[x].desc} />);
-  }
+  items = Data.map((item) => <Card titleText={item.title} desc={item.desc} />);
 
   return (
     <div>
