@@ -7,13 +7,12 @@ import Data from "./data.json";
 function App() {
   // cards have been created dynamically through for loop
 
-  ;
- 
   return (
     <div>
       <h1 className="headingStyle">Todo App</h1>
-      {Data.map((item) => <Card titleText={item.title} desc={item.desc} />)}
-
+      {Data.map((item) => (
+        <Card titleText={item.title} desc={item.desc} />
+      ))}
     </div>
   );
 }
