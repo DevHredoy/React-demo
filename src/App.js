@@ -13,7 +13,7 @@ function App() {
        {/* indexes will show that which index each of the element holds map
     function can take this second parameter */}
       {Data.map((item, index) => (
-        <Card key={index} titleText={item.title} desc={item.desc} />
+        <Card key={index} titleText={item.title} descText={item.desc}  />
       ))}
     </div>
   );
