@@ -1,16 +1,12 @@
 import React from "react";
-import EVENT_HANDLER_CLASS from "./EVENT_HANDLER_CLASS/index";
-import EVENT_BINDING_CLASS from "./EVENT_BINDING/index.js";
 //in App.js  file the component is acommodatd and the value of property has been passed, the properties are defined in
 // in Card.js file and propermapping has also been defined there
+import HOOKS_USESTATE from "./HOOKS_USESTATE/index1";
+
+
+
 function App() {
-  return (
-
-    <div>
-
-<EVENT_BINDING_CLASS />;
-    </div>    
-  )
+  return <div><HOOKS_USESTATE/></div>;
 }
 
 export default App;
