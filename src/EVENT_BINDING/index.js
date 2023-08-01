@@ -9,23 +9,17 @@ export default class EVENT_BINDING_CLASS extends Component {
     };
   }
 
-  handleClick() {
+  handleClick = () => {
     this.setState({
       count: this.state.count + 1
     })
   }
 
-
-    
-
   render() {
     return (
       <div>
         <h1>{this.state.count}</h1>
-
-        {/* // THE purpose of binding is in some syntaxs are not understood by 
-        the older version of ecma   */}
-        <button onClick={this.handleClick.bind(this)}>increase</button>
+        <button onClick={this.handleClick}>increase</button>
       </div>
     );
   }
