@@ -6,7 +6,8 @@ export default function HOOKS_USESTATE2() {
  const handleIncrement=()=>
 {
 
-setCount(count+1);
+setCount((count)=>count+1);
+setCount((count)=>count+1);setCount((count)=>count+1);
 
 }
     return (
