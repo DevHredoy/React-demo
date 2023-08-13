@@ -1,0 +1,2 @@
+Once a prop is declared in the parameter space of a class.all the arguments passed in the app.js becomes  a state/property of that class. if any extra parameter is passed in the app.js under componenet it 
+doesn't give any error but that variable we can declare in the component class or functional component.
