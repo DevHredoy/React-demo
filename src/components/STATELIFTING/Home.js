@@ -1,8 +1,24 @@
-import React from "react";
+import React,{useState} from "react";
+import Todos from "./Todos";
+import NewTodo from "./NewTodo";
 
-const Home=()=> {
-    const todos=["todo1","todo2"];
-  return <div>I am in Home</div>;
-}
+const dummyTodos=["todo1","todo2"];
+
+const Home = () => {
+  const [todos,setTodos]= useState(dummyTodos);
+  
+  
+  const handleNewTodo=(newTodo) =>
+  {setTodos([...todos,newTodo])}
+  
+  
+  return (
+    <div>
+      <NewTodo onTodo={handleNewTodo}/>
+      
+      <Todos todos={todos}  />
+    </div>
+  );
+};
 
 export default Home;
