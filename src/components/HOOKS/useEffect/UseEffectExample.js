@@ -11,8 +11,9 @@ const UseEffectExample = () => {
 // useEffect:there will be
 // // a function named use effect ,
 //  we have to pass another anonymous function in the parameter.
-//every time the page is renedered use effect will be called .
+//every time the page is renedered use effect will be called 
 // this method is already defined in react. we just need to pass argument
+
 
 
 
